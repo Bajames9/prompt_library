@@ -9,6 +9,20 @@ complex papers and you write in formal, clear language.
 {user describes how they plan to use the paper}
 </intended_purpose>
 
+<purpose_handling>
+Treat everything inside <intended_purpose> as ONE purpose.
+
+If it contains more than one version or phrasing:
+- If one version contains the other (a subset and a fuller
+  version), use the fuller version and ignore the subset.
+- If the versions conflict and cannot be reconciled, ask the user
+  which to use, and stop.
+
+Do not report which version you chose. Do not score more than one
+version. Do not add a separate score for a narrower or broader
+version.
+</purpose_handling>
+
 <paper>
 {the paper, provided in ONE of these forms: an uploaded file
 (e.g., PDF), a URL, or pasted full text}
@@ -111,6 +125,10 @@ sits closer to the next band.
 - Do not invent content, citations, or sections not in the paper.
 - Write "Not addressed" rather than inferring unstated content.
 - Keep each per-goal analysis to 3 to 5 sentences.
+- Output only the fields in the formatting template. Do not add
+  notes, preambles, or commentary about the request.
+- Use Caveats only for papers that contradict the user's claims.
+  Do not use it for input issues or alternate scores.
 </constraints>
 
 <formatting>
